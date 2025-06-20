@@ -1,9 +1,5 @@
 # my-qrcode-tool
 
-> [!WARNING] > **🚧 このプロジェクトは現在開発中です 🚧**
->
-> 動作が不安定な場合や、予告なく仕様が変更される可能性があります。
-
 ## 概要
 
 URL 文字列を QR コード画像に変換する、シンプルな Node.js 製のツールです。
@@ -15,6 +11,18 @@ URL 文字列を QR コード画像に変換する、シンプルな Node.js 製
 ## 仕様技術
 
 - Node.js
+- [qrcode](https://www.npmjs.com/package/qrcode)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+
+## 使用方法
+
+`.env` ファイル（例: `.env.example` をコピー）に APP_URL を設定し、`backend` ディレクトリで以下のコマンドを実行してください：
+
+```
+cd backend
+npm install
+npm run generate
+```
 
 ## ライセンス
 

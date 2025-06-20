@@ -6,7 +6,7 @@ async function generateQR() {
   const url = process.env.APP_URL;
   if (!url) throw new Error("APP_URLが設定されていない");
   try {
-    await QRCode.toFile("examaple.png", url, {
+    await QRCode.toFile("./output/examaple.png", url, {
       color: {
         dark: "#000", // 黒いQR
         light: "#FFF", // 白背景
